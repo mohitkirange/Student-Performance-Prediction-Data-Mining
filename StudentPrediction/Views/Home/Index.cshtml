@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>FutureGrade</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="inner">
+            <h1>FutureGrade</h1>
+            <p>Easiest way to predict your grades</p>
+        </div>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Banner -->
+        <section id="intro" class="main">
+            <span class="icon fa-diamond major"></span>
+            <h2>Educational data mining BY <br> Mumbai University , India</h2>
+            
+            <ul class="actions">
+                <li>@Html.ActionLink("Know more", "Mumbaiuniv", "Home", null, new { @class = "button" })</li>
+            </ul>
+        </section>
+
+        <!-- Items -->
+        <section class="main items">
+            
+            <article class="item">
+             
+                  <header>
+                    <a href="#"><img src="~/Content/images/pic01.jpg" /></a>
+                    <h3>DATA STRUCTURE<br>CSC303</h3>
+                </header>
+               
+                <ul class="actions">
+                    <li>@Html.ActionLink("Know your grade","Subject1","Home",null,new { @class = "button"})</li>
+                </ul>
+            </article>
+            
+            <article class="item">
+                <header>
+                    <a href="#"><img src="~/Content/images/pic02.jpg" /></a>
+                    
+
+                    <h3>Computer Organization and Architecture<br>CSC403</h3>
+                </header>
+                
+                <ul class="actions">
+                    <li>@Html.ActionLink("Know your grade", "Subject2", "Home", null, new { @class = "button" })</li>
+                </ul>
+            </article>
+            
+            
+        </section>
+
+        <!-- CTA -->
+        <section id="cta" class="main special">
+            <h2>Past student performance</h2>
+            <p>
+                Know details about the student performance from 2014- 2015 
+            </p>
+            <ul class="actions">
+                <li>@Html.ActionLink("Know more", "Previousdata", "Home", null, new { @class = "button big" })</li>
+            </ul>
+        </section>
+
+        <!-- Main -->
+        <!--
+            <section id="main" class="main">
+                <header>
+                    <h2>Lorem ipsum dolor</h2>
+                </header>
+                <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </section>
+        -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <p>Created by : Mohit K. & Ashish P. , 2016</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/skel.min.js"></script>
+    <script src="~/Scripts/util.js"></script>
+    <script src="~/Scripts/main.js"></script>
+</body>
+</html>

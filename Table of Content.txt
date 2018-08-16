@@ -1,0 +1,5 @@
+A digital copy of report - STUDENT PERFORMANCE PREDICTION USING DATA MINING.DOC
+Presentation PPT - STUDENT PERFORMANCE PREDICTION USING DATA MINING.PPT
+TRaining data - Subject 1.arff
+		Subject 2.arff
+Project Source code- Project Folder.

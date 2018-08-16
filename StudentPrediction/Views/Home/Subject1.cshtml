@@ -1,0 +1,162 @@
+﻿
+
+@model StudentPrediction.Models.StudentDetails
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>FutureGrade</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+
+</head>
+<br>
+<header>
+    
+        <ul class="actions"><li></li>
+            <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "button" })</li>
+        
+    </ul>
+
+</header>
+
+
+
+<body>
+
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="inner">
+            <h1>FutureGrade</h1>
+            <p>Easiest way to predict your grades</p>
+        </div>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Banner -->
+        <section id="intro" class="main">
+            <span class="icon fa-diamond major"></span>
+            <h2>Data Structures (DS)</h2>
+            <p>
+                <h4>Course Objectives</h4>
+                1. To teach efficient storage mechanisms of data for an easy access. <br>
+                2. To design and implementation of various basic and advanced data structures. <br>
+                3. To introduce various techniques for representation of the data in the real world. <br>
+                4. To develop application using data structures. <br>
+                5. To teach the concept of protection and management of data. <br>
+                6. To improve the logical ability <br><br>
+                <h4>Course Outcomes</h4>
+                1. Student will be able to choose appropriate data structure as applied to specified problem definition.<br>
+                2. Student will be able to handle operations like searching, insertion, deletion, traversing mechanism etc. on various data structures.<br>
+                3. Students will be able to apply concepts learned in various domains like DBMS, compiler construction etc.<br>
+                4. Students will be able to use linear and non-linear data structures like stacks , queues , linked list etc.<br>
+            </p>
+            </section>
+        <section id="intro" class="main">
+            <p>
+                <span class="icon fa-diamond major"></span>
+                <h2>Predict your grade</h2>
+                Please enter your obtained marks
+            </p>
+
+            @using (Html.BeginForm("Calculate", "Home", FormMethod.Post))
+            {
+
+                <h4>First name:</h4>
+                    @Html.TextBoxFor(m => m.Name)
+                    <br><br>
+
+                    <h4>Q1 (between 0 and 5):</h4>
+                    @Html.TextBoxFor(m => m.Quiz1)
+
+                    <br><br>
+
+                    <h4>Q2 (between 0 and 5):</h4>
+                    @Html.TextBoxFor(m => m.Quiz2)
+                    <br><br>
+
+                    <h4>Q3 (between 0 and 5):</h4>
+                    @Html.TextBoxFor(m => m.Quiz3)
+                    <br><br>
+
+                    <h4>Mid 1 (between 0 and 10):</h4>
+                    @Html.TextBoxFor(m => m.Mid1)
+                    <br><br>
+
+                    <h4>Mid 2 (between 0 and 10):</h4>
+                    @Html.TextBoxFor(m => m.Mid2)
+                    <br><br>
+
+                    <h4>Project (between 0 and 10):</h4>
+                    @Html.TextBoxFor(m => m.Project)
+                    <br><br>
+
+                    <h4>Tutorial (between 0 and 5):</h4>
+                    @Html.TextBoxFor(m => m.Tutorial)
+                    <br><br>
+
+                    <h4>Lab (between 0 and 10):</h4>
+                    @Html.TextBoxFor(m => m.FinalLab)
+                    <br><br>
+
+                    <h4>Final Exam (between 0 and 40):</h4>
+                    @Html.TextBoxFor(m => m.FinalExam)
+                    <br><br>
+
+                    <input type="submit" value="Submit">
+
+            }
+        </section>
+
+
+
+
+
+        <!-- CTA -->
+        <section id="cta" class="main special">
+            <h2>Past student performance</h2>
+            <p>
+                Know details about the student performance from 2014- 2015
+            </p>
+            <ul class="actions">
+                <li>@Html.ActionLink("Know more", "Previousdata", "Home", null, new { @class = "button big" })</li>
+            </ul>
+        </section>
+
+        <!-- Main -->
+        <!--
+            <section id="main" class="main">
+                <header>
+                    <h2>Lorem ipsum dolor</h2>
+                </header>
+                <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </section>
+        -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <p>Created by : Mohit K. & Ashish P. , 2016</p></footer>
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/skel.min.js"></script>
+    <script src="~/Scripts/util.js"></script>
+    <script src="~/Scripts/main.js"></script>
+
+</body>
+</html>

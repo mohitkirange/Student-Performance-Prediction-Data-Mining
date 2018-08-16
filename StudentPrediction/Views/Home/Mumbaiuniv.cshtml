@@ -1,0 +1,115 @@
+﻿@model StudentPrediction.Models.StudentDetails
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>FutureGrade</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+
+</head>
+<br>
+<header>
+
+    <ul class="actions">
+        <li></li>
+        <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "button" })</li>
+    </ul>
+
+</header>
+
+
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="inner">
+            <h1>FutureGrade</h1>
+            <p>Easiest way to predict your grades</p>
+        </div>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Banner -->
+        <section id="intro" class="main">
+            <span class="icon fa-diamond major"></span>
+            <h2>Mumbai University , India</h2>
+            <p>
+                The University of Mumbai, also known as MU, is one of the first state universities of India and the oldest in Maharashtra.<br>
+                The University of Mumbai offers Bachelors, Masters and Doctoral courses, as well as diplomas and certificates in many disciplines.<br>
+                The University of Mumbai is one of the largest universities in the world. In 2011, the total number of enrolled students was 549,432.<br>
+                The University of Mumbai currently has 711 affiliated colleges.
+                        </p>
+
+            <h2>Educational data mining(EDM)</h2>
+            <p>
+                Educational Data Mining (EDM) is an emerging discipline, concerned with developing methods for exploring the unique types of data that <br>
+                come from educational settings, and using those methods to better understand students, and the settings which they learn in. Educational<br>
+                Data Mining focuses on developing new tools and algorithms for discovering data patterns. EDM develops methods and applies techniques <br>
+                from statistics, machine learning, and data mining to analyze data collected during teaching and learning. EDM tests learning theories<br>
+                 and informs educational practice.<br><br>
+                Educational data available for analysis nowadays continues to grow rapidly. The need to study the massive amounts of data generated from
+                 the global educational ecosystem has spawned the field of (EDM). EDM is the process of applying data mining tools and techniques to analyze
+                 data in educational institutions. The application of data mining techniques to educational data will help the educational sector improve its
+                 learning process to better benefit students. Example of data stored in databases maintained by educational institutions includes: enrollment data,
+                 students’ performances, teachers’ evaluations, gender differences, and numerous other measures. EDM can help universities better plan for the
+                 anticipated number of students enrolling in their programs, predict the dropout ratio, easily identify weak students, and make better use of
+                available resources ranging from the number of faculties to the utilization of other resources. In addition, higher education assesses its
+                student's performances and progresses to improve its academic programs. More recently, literature has evolved in the field of educational
+                 data mining because of its potential benefits to education. Once these data have been correctly analyzed, they will help advance knowledge in
+                 the educational sector. This will help educational institutions assess, evaluate, plan, and decide their educational programs.
+                This new knowledge is expected to reveal hidden patterns that will assist academic programs utilize resources more effectively.
+
+
+            </p>
+        </section>
+        
+        <!-- CTA -->
+        <section id="cta" class="main special">
+            <h2>Past student performance</h2>
+            <p>
+                Know details about the student performance from 2014- 2015
+            </p>
+            <ul class="actions">
+                <li>@Html.ActionLink("Know more", "Previousdata", "Home", null, new { @class = "button big" })</li>
+            </ul>
+        </section>
+
+        <!-- Main -->
+        <!--
+            <section id="main" class="main">
+                <header>
+                    <h2>Lorem ipsum dolor</h2>
+                </header>
+                <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </section>
+        -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <p>Created by : Mohit K. & Ashish P. , 2016</p></footer>
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/skel.min.js"></script>
+    <script src="~/Scripts/util.js"></script>
+    <script src="~/Scripts/main.js"></script>
+
+</body>
+</html>

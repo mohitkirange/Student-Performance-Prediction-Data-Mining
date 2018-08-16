@@ -1,0 +1,134 @@
+﻿@model StudentPrediction.Models.StudentDetails
+
+@{
+    ViewBag.Title = "Calculate";
+}
+
+<html>
+<head>
+    <title>FutureGrade</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<br>
+<header>
+
+    <ul class="actions">
+        <li></li>
+        <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "button" })</li>
+
+    </ul>
+
+</header>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="inner">
+            <h1>FutureGrade</h1>
+            <p>Easiest way to predict your grades</p>
+        </div>
+    </header>
+
+    <section id="intro" class="main">
+        <span class="icon fa-diamond major"></span>
+        <h2>Hi @Html.DisplayFor(model => model.Name) </h2>
+        <h2>your grade is @Html.DisplayFor(model => model.Grade) </h2>
+        <ul class="actions">
+            <li>@Html.ActionLink("<-- Go back", "Subject2", "Home", null, new { @class = "button" })</li>
+        </ul>
+
+        <!--
+                <div>
+                    <h4>StudentDetails</h4>
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Quiz1)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Quiz1)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Quiz2)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Quiz2)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Quiz3)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Quiz3)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Mid1)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Mid1)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Mid2)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Mid2)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Project)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Project)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Tutorial)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Tutorial)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.FinalLab)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.FinalLab)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.FinalExam)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.FinalExam)
+                        </dd>
+
+                        Your grade is @Html.DisplayFor(model => model.Grade)
+
+                    </dl>
+                </div>
+            //-->
+
+
+    </section>
+</body>

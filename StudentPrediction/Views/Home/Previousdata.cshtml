@@ -1,0 +1,93 @@
+﻿@model StudentPrediction.Models.StudentDetails
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>FutureGrade</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+
+</head>
+<br>
+<header>
+
+    <ul class="actions">
+        <li></li>
+        <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "button" })</li>
+
+    </ul>
+
+</header>
+
+
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="inner">
+            <h1>FutureGrade</h1>
+            <p>Easiest way to predict your grades</p>
+        </div>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Banner -->
+        <section id="intro" class="main">
+            <span class="icon fa-diamond major"></span>
+            <h2>Data Collection</h2>
+            <p>
+                Student’s data for the course “Data Structures (DS)” and "Computer Organization and Architecture (COA)" was collected from the Computer Science department at Mumbai University, India, for two consecutive semesters. A total of 225 records were initially collected. Having deleted data for withdrawn students, the remaining number of records was 200. Each student record had the following attributes based on subject pattern student grades in quiz1, quiz2, and quiz3, midterm1, midterm2, project, tutorial, final exam, and total points obtained. The distribution of points for the course was 60 for a year’s work (which included quizzes {1, 2, 3}, midterms {1, 2}, tutorials, the project and the final lab) and 40 points for the final exam. A student must have obtained at least 60 out of 100 to pass the course.
+            </p>
+            </section>
+            <section id="intro" class="main">
+                <h2>Graphical Representation of Previous collected data for DS and COA</h2>
+                <p>
+                    <h4> Statistical comparison for DS and COA - PASS-Fail</h4>
+                    <img src="~/Content/images/Passfail.JPG" /><br><br>
+                    <h4> Grades for DS</h4>
+                    <img src="~/Content/images/gradeds.JPG" /><br><br>
+                    <h4> Grades for COA</h4>
+                    <img src="~/Content/images/gradecoa.JPG" /><br>
+
+                </p>
+            </section>
+
+
+        <!-- Main -->
+        <!--
+            <section id="main" class="main">
+                <header>
+                    <h2>Lorem ipsum dolor</h2>
+                </header>
+                <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </section>
+        -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <p>Created by : Mohit K. & Ashish P. , 2016</p></footer>
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/skel.min.js"></script>
+    <script src="~/Scripts/util.js"></script>
+    <script src="~/Scripts/main.js"></script>
+
+</body>
+</html>

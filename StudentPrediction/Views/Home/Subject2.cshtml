@@ -1,0 +1,162 @@
+﻿@model StudentPrediction.Models.StudentDetails
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>FutureGrade</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+
+</head>
+<br>
+<header>
+
+    <ul class="actions">
+        <li></li>
+        <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "button" })</li>
+    </ul>
+
+</header>
+
+
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="inner">
+            <h1>FutureGrade</h1>
+            <p>Easiest way to predict your grades</p>
+        </div>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Banner -->
+        <section id="intro" class="main">
+            <span class="icon fa-diamond major"></span>
+            <h2>Computer Organization and Architecture (COA)</h2>
+            <p>
+                <h4>Course Objectives</h4>
+                1. To conceptualize the basics of organizational and architectural issues of a digital computer.<br>
+                2. To analyze performance issues in processor and memory design of a digital computer.<br>
+                3. To understand various data transfer techniques in digital computer.<br>
+                4. To analyze processor performance improvement using instruction level parallelism<br><br>
+                <h4>Course Outcomes:</h4>
+                1. Ability to understand basic structure of computer.<br>
+                2. Ability to perform computer arithmetic operations.<br>
+                3. Ability to understand control unit operations.<br>
+                4. Ability to design memory organization that uses banks for different word size operations.<br>
+                5. Ability to understand the concept of cache mapping techniques.<br>
+                6. Ability to understand the concept of I/O organization.<br>
+                7. Ability to conceptualize instruction level parallelism. <br>
+            </p>
+        </section>
+        <section id="intro" class="main">
+            <p>
+                <span class="icon fa-diamond major"></span>
+                <h2>Predict your grade</h2>
+                Please enter your obtained marks
+            </p>
+
+            @using (Html.BeginForm("Calculate1", "Home", FormMethod.Post))
+            {
+
+                <h4>First name:</h4>
+                @Html.TextBoxFor(m => m.Name)
+                <br><br>
+
+                <h4>Q1 (between 0 and 5):</h4>
+                    @Html.TextBoxFor(m => m.Quiz1)
+
+                    <br><br>
+
+                    <h4>Q2 (between 0 and 5):</h4>
+                    @Html.TextBoxFor(m => m.Quiz2)
+                    <br><br>
+
+                    <h4>Q3 (between 0 and 5):</h4>
+                    @Html.TextBoxFor(m => m.Quiz3)
+                    <br><br>
+
+                    <h4>Mid 1 (between 0 and 10):</h4>
+                    @Html.TextBoxFor(m => m.Mid1)
+                    <br><br>
+
+                    <h4>Mid 2 (between 0 and 10):</h4>
+                    @Html.TextBoxFor(m => m.Mid2)
+                    <br><br>
+
+                    <h4>Project (between 0 and 10):</h4>
+                    @Html.TextBoxFor(m => m.Project)
+                    <br><br>
+
+                    <h4>Tutorial (between 0 and 5):</h4>
+                    @Html.TextBoxFor(m => m.Tutorial)
+                    <br><br>
+
+                    <h4>Lab (between 0 and 10):</h4>
+                    @Html.TextBoxFor(m => m.FinalLab)
+                    <br><br>
+
+                    <h4>Final Exam (between 0 and 40):</h4>
+                    @Html.TextBoxFor(m => m.FinalExam)
+                    <br><br>
+
+                    <input type="submit" value="Submit">
+
+            }
+
+        </section>
+
+
+
+
+
+        <!-- CTA -->
+        <section id="cta" class="main special">
+            <h2>Past student performance</h2>
+            <p>
+                Know details about the student performance from 2014- 2015
+            </p>
+            <ul class="actions">
+                <li>@Html.ActionLink("Know more", "Previousdata", "Home", null, new { @class = "button big" })</li>
+            </ul>
+        </section>
+
+        <!-- Main -->
+        <!--
+            <section id="main" class="main">
+                <header>
+                    <h2>Lorem ipsum dolor</h2>
+                </header>
+                <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </section>
+        -->
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <p>Created by : Mohit K. & Ashish P. , 2016</p></footer>
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/skel.min.js"></script>
+    <script src="~/Scripts/util.js"></script>
+    <script src="~/Scripts/main.js"></script>
+
+</body>
+</html>
